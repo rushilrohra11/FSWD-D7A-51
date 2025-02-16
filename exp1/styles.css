@@ -166,7 +166,6 @@ a:hover {
     }
 }
 
-/* Add fade-in animation to all sections */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -182,7 +181,6 @@ a:hover {
     animation: fadeIn 0.8s ease-out forwards;
 }
 
-/* Delay animations for each section */
 .section:nth-child(1) {
     animation-delay: 0.2s;
 }
@@ -199,7 +197,6 @@ a:hover {
     animation-delay: 0.8s;
 }
 
-/* Add hover animation to project cards */
 @keyframes cardHover {
     from {
         transform: scale(1);
@@ -219,7 +216,6 @@ a:hover {
     animation: cardHover 0.3s ease forwards;
 }
 
-/* Add animation to the profile image */
 @keyframes profileImageHover {
     from {
         transform: scale(1);

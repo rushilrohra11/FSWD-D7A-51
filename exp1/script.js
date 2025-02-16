@@ -1,19 +1,15 @@
-// Get references to the form and the display area
 const contactForm = document.querySelector('.contact-form');
-const displayDetails = document.createElement('div'); // Create a div to display the details
-displayDetails.className = 'display-details'; // Add a class for styling
-contactForm.parentElement.appendChild(displayDetails); // Append the div after the form
+const displayDetails = document.createElement('div'); 
+displayDetails.className = 'display-details'; 
+contactForm.parentElement.appendChild(displayDetails); 
 
-// Add an event listener to the form
 contactForm.addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the form from submitting
+    event.preventDefault(); 
 
-    // Get the input values
     const name = contactForm.querySelector('input[type="text"]').value;
     const email = contactForm.querySelector('input[type="email"]').value;
     const message = contactForm.querySelector('textarea').value;
 
-    // Create HTML to display the details
     const detailsHTML = `
         <h3>Submitted Details:</h3>
         <p><strong>Name:</strong> ${name}</p>
@@ -21,9 +17,7 @@ contactForm.addEventListener('submit', function (event) {
         <p><strong>Message:</strong> ${message}</p>
     `;
 
-    // Update the display area with the entered details
     displayDetails.innerHTML = detailsHTML;
 
-    // Clear the form inputs
     contactForm.reset();
 });

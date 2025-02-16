@@ -1,4 +1,3 @@
-// Array of colors to cycle through
 const colors = ["#FF5733", "#33FF57", "#3357FF", "#FF33A1", "#33FFF5", "#F5FF33"];
 
 let currentIndex = 0;

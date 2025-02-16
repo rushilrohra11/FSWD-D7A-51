@@ -1,4 +1,3 @@
-// Get references to the bulb image and toggle button
 const bulb = document.getElementById('bulb');
 const toggleButton = document.getElementById('toggle');
 
